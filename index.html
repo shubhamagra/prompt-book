@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PromptVault | Premium AI Prompt Library</title>
+
+    <meta name="description"
+        content="Discover thousands of professional AI prompts for Marketing, Sales, Content Creation, HR, Finance and more.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <div class="logo">
+
+                    Prompt<span>Vault</span>
+
+                </div>
+
+                <ul class="nav-links">
+
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#library">Library</a></li>
+
+                    <li><a href="#categories">Categories</a></li>
+
+                    <li><a href="#">Resources</a></li>
+
+                </ul>
+
+                <button class="mobile-menu">
+
+                    ☰
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <span class="hero-badge">
+
+                🚀 2500+ Premium AI Prompts
+
+            </span>
+
+            <h1>
+
+                Find the Perfect AI Prompt in Seconds
+
+            </h1>
+
+            <p>
+
+                Browse thousands of ready-to-use prompts for Marketing,
+                Customer Service, Sales, Operations, Strategy,
+                Finance, HR, Content Creation and more.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#library" class="btn-primary">
+
+                    Browse Prompts
+
+                </a>
+
+                <a href="#" class="btn-secondary">
+
+                    Submit Prompt
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h2>2,500+</h2>
+
+                    <p>AI Prompts</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>10</h2>
+
+                    <p>Categories</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>15K+</h2>
+
+                    <p>Downloads</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h2>98%</h2>
+
+                    <p>User Satisfaction</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="container">
+
+            <div class="search-wrapper">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search prompts by title, category or keyword...">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section id="categories" class="categories">
+
+        <div class="container">
+
+            <div class="category-scroll">
+
+                <button class="category active" data-category="All Topics">
+
+                    All Topics
+
+                </button>
+
+                <button class="category" data-category="Marketing">
+
+                    Marketing
+
+                </button>
+
+                <button class="category" data-category="Customer Service">
+
+                    Customer Service
+
+                </button>
+
+                <button class="category" data-category="Content Creation">
+
+                    Content Creation
+
+                </button>
+
+                <button class="category" data-category="Operations">
+
+                    Operations
+
+                </button>
+
+                <button class="category" data-category="Sales">
+
+                    Sales
+
+                </button>
+
+                <button class="category" data-category="HR">
+
+                    HR
+
+                </button>
+
+                <button class="category" data-category="Finance">
+
+                    Finance
+
+                </button>
+
+                <button class="category" data-category="Strategy">
+
+                    Strategy
+
+                </button>
+
+                <button class="category" data-category="Product">
+
+                    Product
+
+                </button>
+
+                <button class="category" data-category="Other">
+
+                    Other
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SORT ================= -->
+
+    <section class="sort-bar">
+
+        <div class="container">
+
+            <div class="sort-wrapper">
+
+                <span id="resultsCount">
+
+                    Showing 12 of 2500 Prompts
+
+                </span>
+
+                <select id="sortSelect">
+
+                    <option>Newest</option>
+
+                    <option>Popular</option>
+
+                    <option>Most Copied</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROMPTS ================= -->
+
+    <main id="library" class="library">
+
+        <div class="container">
+
+            <div id="promptGrid" class="prompt-grid">
+
+                <!-- Cards loaded from JavaScript -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= PAGINATION ================= -->
+
+    <section class="pagination-section">
+
+        <div class="container">
+
+            <div id="pagination" class="pagination">
+
+                <!-- Pagination generated by JS -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <h2>
+
+                    Want More Premium AI Prompts?
+
+                </h2>
+
+                <p>
+
+                    Join PromptVault and access thousands of curated prompts
+                    updated every week.
+
+                </p>
+
+                <a href="#" class="btn-primary">
+
+                    Get Started
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+
+                    <h3>PromptVault</h3>
+
+                    <p>
+
+                        The ultimate AI Prompt Library for professionals.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h4>Categories</h4>
+
+                    <ul>
+
+                        <li>Marketing</li>
+
+                        <li>Sales</li>
+
+                        <li>Finance</li>
+
+                        <li>HR</li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <h4>Resources</h4>
+
+                    <ul>
+
+                        <li>Documentation</li>
+
+                        <li>Privacy</li>
+
+                        <li>Terms</li>
+
+                        <li>Support</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 PromptVault. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div id="toast" class="toast">
+
+        ✅ Prompt copied successfully
+
+    </div>
+
+
+
+    <!-- ================= JS ================= -->
+
+    <script src="data.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
